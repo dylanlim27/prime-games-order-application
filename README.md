@@ -1,0 +1,103 @@
+# Prime Games Singapore - Console Order Application
+
+A comprehensive **Windows Forms (WinForms)** application developed in C# and .NET Framework 4.7.2. Designed as a "one-window" desktop solution, it helps a local video game retailer manage client console orders, customize purchases with bundles and warranty options, automatically apply volume discounts, and process promo codes.
+
+---
+
+## 📸 Application Preview
+Here is a preview of the main application window:
+
+![Application Interface](Application%20Screenshot%20Master.jpg)
+
+---
+
+## 🚀 Key Features
+
+*   **Featured Products Section:** Showcases the top 3 selling next-gen consoles (PlayStation 5, Xbox Series X, and Nintendo Switch 3rd Gen). Clicking on any featured console image programmatically selects and highlights the item in the list.
+*   **Product List Section:** Interactive product catalog featuring 6 major console models with their descriptions, unit prices, and specifications:
+    1.  **PlayStation 5** — \$729.00
+    2.  **PlayStation 5 Digital Edition** — \$599.00
+    3.  **Xbox Series X** — \$699.00
+    4.  **Xbox Series S** — \$459.00
+    5.  **Nintendo Switch 3rd Generation** — \$499.00
+    6.  **Nintendo Switch Lite 2nd Generation** — \$329.00
+*   **Add-On Bundles:** Customers can customize their orders by selecting multiple upgrade bundles:
+    *   **Teamspeak Bundle** (+\$109.00) — Gaming Headset
+    *   **Value Bundle** (+\$130.00) — 2 Additional Games
+    *   **Family Bundle** (+\$139.00) — Media Remote + 6-month Netflix Premium Subscription
+*   **Warranty Packages:** Flexible product protection plans:
+    *   **Basic** (+\$49.99) — 1-Year Warranty
+    *   **Prime** (+\$79.99) — 2-Year Warranty
+    *   **Invincible** (+\$129.99) — 3-Year Warranty with doorstep servicing
+*   **Live Price Calculations:** Features real-time price compilation (price of the console plus selected add-ons and warranty, multiplied by the purchase quantity) visible before clicking **Buy**.
+*   **Automatic Volume Discounts:** Applies pricing reductions based on order total:
+    *   **3% Discount** for purchases $\ge$ \$750
+    *   **5% Discount** for purchases $\ge$ \$1,000
+    *   **7% Discount** for purchases $\ge$ \$1,300
+*   **Promotion Code System:** Evaluates promotional codes to reward buyers:
+    *   `AdventurerSG` — Free Game Console Case *(Displays case gift item image)*
+    *   `FunForAll` — Free 14-Days Online Multiplayer Subscription *(Displays PS Plus card image)*
+    *   `GamerSG` — Free \$10 Store Gift Card *(Displays store voucher image)*
+*   **Receipt Output Summary:** Clicking the **Buy** button prompts an informative, formatted dialog receipt outlining all purchased goods, selected warranty package, active add-ons, applied discounts, and free promotional items.
+
+---
+
+## 🛠️ Technology Stack
+*   **Language:** C# 7.3
+*   **UI Framework:** Windows Forms (WinForms)
+*   **Target Framework:** .NET Framework 4.7.2
+*   **IDE Compatibility:** Visual Studio 2019 / 2022
+
+---
+
+## 📐 Project Structure
+
+```
+├── Flowcharts/                      # PNG exports of system design flowcharts
+├── Individual Project Dylan Lim/    # The primary C# visual studio project
+│   ├── Properties/                  # Application properties & resources (embedded assets)
+│   ├── Resources/                   # Images used dynamically in the C# app
+│   ├── App.config                   # Application configuration file
+│   ├── Form1.cs                     # Core application logic and event handlers
+│   ├── Form1.Designer.cs            # Auto-generated UI form configuration
+│   ├── Program.cs                   # Application main entry point
+│   └── Individual Project Dylan Lim.csproj
+├── Resources/                       # Duplicate project resources (backup)
+├── DBS Individual Project Oct2020.docx # Original Project Design Brief
+├── TB01 - Dylan Lim.docx            # Detailed Project Specification Report
+├── Wireframe Master.png             # UI Design Mockup
+├── README.md                        # Project documentation
+└── .gitignore                       # Git ignore rules for Visual Studio
+```
+
+---
+
+## 🔧 Refactoring & Modernization Details
+
+During preparation for publication to GitHub, the project underwent essential polishing to improve build reliability and code hygiene:
+
+1.  **Removed Legacy Dependencies:** The project previously referenced the deprecated `Microsoft.VisualBasic.PowerPacks` library to draw a simple divider line on the form. This has been refactored and replaced with a standard, native `System.Windows.Forms.Panel` control. This eliminates compilation errors on modern environments that lack the Visual Basic PowerPacks SDK.
+2.  **Implemented State Logic:** Fully implemented the form's interactive code logic inside `Form1.cs`. Previously empty event handlers are now fully operational, supporting live calculations, item selections, promo checks, and quantity validation.
+3.  **Added Environment Isolation (.gitignore):** A `.gitignore` file has been added to exclude temporary `.vs/` directories, intermediate binary folders (`bin/`, `obj/`), and user settings, ensuring a clean and production-ready source control upload.
+
+---
+
+## 💻 Getting Started
+
+### Prerequisites
+*   Windows OS (Required for WinForms execution)
+*   [Visual Studio 2022](https://visualstudio.microsoft.com/) (with the `.NET desktop development` workload checked)
+
+### Installation
+1.  Clone the repository:
+    ```bash
+    git clone <your-github-repo-url>
+    ```
+2.  Open Visual Studio and select **Open a project or solution**.
+3.  Navigate to the cloned directory and select the solution file: `Individual Project Dylan Lim/Individual Project Dylan Lim.sln`.
+4.  Press `F5` or click the **Start** button in Visual Studio to compile and run the application.
+
+---
+
+## 📝 License
+This project is prepared for educational purposes and is public repository ready.
