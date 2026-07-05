@@ -7,14 +7,14 @@ A comprehensive **Windows Forms (WinForms)** application developed in C# and .NE
 ## 📸 Application Preview
 Here is a preview of the main application window:
 
-![Application Interface](docs/assets/Application%20Screenshot%20Master.jpg)
+<img src="docs/assets/Application%20Screenshot%20Master.jpg" alt="Application Interface" width="60%">
 
 ---
 
 ## 📐 Wireframe Mockup
 Here is the original wireframe mockup used during the UI design planning phase:
 
-![Wireframe Mockup](docs/assets/Wireframe%20Master.png)
+<img src="docs/assets/Wireframe%20Master.png" alt="Wireframe Mockup" width="60%">
 
 ---
 
