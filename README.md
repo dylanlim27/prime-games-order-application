@@ -7,7 +7,14 @@ A comprehensive **Windows Forms (WinForms)** application developed in C# and .NE
 ## 📸 Application Preview
 Here is a preview of the main application window:
 
-![Application Interface](Application%20Screenshot%20Master.jpg)
+![Application Interface](docs/assets/Application%20Screenshot%20Master.jpg)
+
+---
+
+## 📐 Wireframe Mockup
+Here is the original wireframe mockup used during the UI design planning phase:
+
+![Wireframe Mockup](docs/assets/Wireframe%20Master.png)
 
 ---
 
@@ -52,22 +59,29 @@ Here is a preview of the main application window:
 
 ## 📐 Project Structure
 
+Following standard industry conventions, the project directory layout is structured as follows:
+
 ```
-├── Flowcharts/                      # PNG exports of system design flowcharts
-├── Individual Project Dylan Lim/    # The primary C# visual studio project
-│   ├── Properties/                  # Application properties & resources (embedded assets)
-│   ├── Resources/                   # Images used dynamically in the C# app
-│   ├── App.config                   # Application configuration file
+├── docs/                            # Project specifications, user stories, and design layouts
+│   ├── assets/                      # Graphic assets, wireframes, screenshots, and drawio files
+│   │   ├── Application Screenshot Master.jpg
+│   │   ├── Wireframe Master.png
+│   │   ├── original_resources/      # Original raw image backups
+│   │   └── *.drawio                 # Raw design diagrams
+│   ├── Flowcharts/                  # Exported flowchart diagrams in PNG format
+│   └── Project Brief.docx           # Project specification report (renamed from TB01 - Dylan Lim.docx)
+├── src/                             # C# CSharp project source directory
+│   ├── Properties/                  # Application properties & resource declarations
+│   ├── Resources/                   # Project active resources (embedded build assets)
+│   ├── App.config                   # Config settings
 │   ├── Form1.cs                     # Core application logic and event handlers
-│   ├── Form1.Designer.cs            # Auto-generated UI form configuration
-│   ├── Program.cs                   # Application main entry point
+│   ├── Form1.Designer.cs            # Form designer bindings
+│   ├── Form1.resx                   # Form resource dictionary
+│   ├── Program.cs                   # Main program thread entry point
 │   └── Individual Project Dylan Lim.csproj
-├── Resources/                       # Duplicate project resources (backup)
-├── DBS Individual Project Oct2020.docx # Original Project Design Brief
-├── TB01 - Dylan Lim.docx            # Detailed Project Specification Report
-├── Wireframe Master.png             # UI Design Mockup
-├── README.md                        # Project documentation
-└── .gitignore                       # Git ignore rules for Visual Studio
+├── Individual Project Dylan Lim.sln # Solution file (placed at repository root for VS launch)
+├── .gitignore                       # Git ignore mappings for Visual Studio build outputs
+└── README.md                        # Project documentation file
 ```
 
 ---
@@ -79,6 +93,7 @@ During preparation for publication to GitHub, the project underwent essential po
 1.  **Removed Legacy Dependencies:** The project previously referenced the deprecated `Microsoft.VisualBasic.PowerPacks` library to draw a simple divider line on the form. This has been refactored and replaced with a standard, native `System.Windows.Forms.Panel` control. This eliminates compilation errors on modern environments that lack the Visual Basic PowerPacks SDK.
 2.  **Implemented State Logic:** Fully implemented the form's interactive code logic inside `Form1.cs`. Previously empty event handlers are now fully operational, supporting live calculations, item selections, promo checks, and quantity validation.
 3.  **Added Environment Isolation (.gitignore):** A `.gitignore` file has been added to exclude temporary `.vs/` directories, intermediate binary folders (`bin/`, `obj/`), and user settings, ensuring a clean and production-ready source control upload.
+4.  **Standardized Directory Layout:** Repositioned the `.sln` file at the repository root folder, C# code files into a dedicated `src/` folder, and documentation, flowcharts, drawio sources, and wireframes into a `docs/` folder.
 
 ---
 
@@ -94,7 +109,7 @@ During preparation for publication to GitHub, the project underwent essential po
     git clone <your-github-repo-url>
     ```
 2.  Open Visual Studio and select **Open a project or solution**.
-3.  Navigate to the cloned directory and select the solution file: `Individual Project Dylan Lim/Individual Project Dylan Lim.sln`.
+3.  Navigate to the cloned directory and select the solution file at the root: `Individual Project Dylan Lim.sln`.
 4.  Press `F5` or click the **Start** button in Visual Studio to compile and run the application.
 
 ---
