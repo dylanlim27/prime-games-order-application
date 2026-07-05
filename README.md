@@ -84,19 +84,6 @@ Following standard industry conventions, the project directory layout is structu
 └── README.md                        # Project documentation file
 ```
 
----
-
-## 🔧 Refactoring & Modernization Details
-
-During preparation for publication to GitHub, the project underwent essential polishing to improve build reliability and code hygiene:
-
-1.  **Removed Legacy Dependencies:** The project previously referenced the deprecated `Microsoft.VisualBasic.PowerPacks` library to draw a simple divider line on the form. This has been refactored and replaced with a standard, native `System.Windows.Forms.Panel` control. This eliminates compilation errors on modern environments that lack the Visual Basic PowerPacks SDK.
-2.  **Implemented State Logic:** Fully implemented the form's interactive code logic inside `PrimeGamesSingaporeForm.cs`. Previously empty event handlers are now fully operational, supporting live calculations, item selections, promo checks, and quantity validation.
-3.  **Added Environment Isolation (.gitignore):** A `.gitignore` file has been added to exclude temporary `.vs/` directories, intermediate binary folders (`bin/`, `obj/`), and user settings, ensuring a clean and production-ready source control upload.
-4.  **Standardized Directory Layout:** Repositioned the `.sln` file at the repository root folder, C# code files into a dedicated `src/` folder, and documentation, flowcharts, drawio sources, and wireframes into a `docs/` folder.
-
----
-
 ## 💻 Getting Started
 
 ### Prerequisites
