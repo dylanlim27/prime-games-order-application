@@ -14,7 +14,7 @@ Here is a preview of the main application window:
 ## 📐 Wireframe Mockup
 Here is the original wireframe mockup used during the UI design planning phase:
 
-<img src="docs/assets/Wireframe%20Master.png" alt="Wireframe Mockup" width="60%">
+<img src="docs/assets/Wireframe%20Master.png" alt="Wireframe Mockup" width="90%">
 
 ---
 
