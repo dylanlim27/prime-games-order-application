@@ -57,33 +57,6 @@ Here is the original wireframe mockup used during the UI design planning phase:
 
 ---
 
-## 📐 Project Structure
-
-Following standard industry conventions, the project directory layout is structured as follows:
-
-```
-├── docs/                            # Project specifications, user stories, and design layouts
-│   ├── assets/                      # Graphic assets, wireframes, screenshots, and drawio files
-│   │   ├── Application Screenshot Master.jpg
-│   │   ├── Wireframe Master.png
-│   │   ├── original_resources/      # Original raw image backups
-│   │   └── *.drawio                 # Raw design diagrams
-│   ├── Flowcharts/                  # Exported flowchart diagrams in PNG format
-│   └── Project Brief.docx           # Project specification report (renamed from TB01 - Dylan Lim.docx)
-├── src/                             # C# CSharp project source directory
-│   ├── Properties/                  # Application properties & resource declarations
-│   ├── Resources/                   # Project active resources (embedded build assets)
-│   ├── App.config                   # Config settings
-│   ├── PrimeGamesSingaporeForm.cs   # Core application logic and event handlers
-│   ├── PrimeGamesSingaporeForm.Designer.cs # Form designer bindings
-│   ├── PrimeGamesSingaporeForm.resx # Form resource dictionary
-│   ├── Program.cs                   # Main program thread entry point
-│   └── PrimeGamesOrderApp.csproj
-├── PrimeGamesOrderApp.sln           # Solution file (placed at repository root for VS launch)
-├── .gitignore                       # Git ignore mappings for Visual Studio build outputs
-└── README.md                        # Project documentation file
-```
-
 ## 💻 Getting Started
 
 ### Prerequisites
@@ -98,8 +71,3 @@ Following standard industry conventions, the project directory layout is structu
 2.  Open Visual Studio and select **Open a project or solution**.
 3.  Navigate to the cloned directory and select the solution file at the root: `PrimeGamesOrderApp.sln`.
 4.  Press `F5` or click the **Start** button in Visual Studio to compile and run the application.
-
----
-
-## 📝 License
-This project is prepared for educational purposes and is public repository ready.
