@@ -74,12 +74,12 @@ Following standard industry conventions, the project directory layout is structu
 │   ├── Properties/                  # Application properties & resource declarations
 │   ├── Resources/                   # Project active resources (embedded build assets)
 │   ├── App.config                   # Config settings
-│   ├── Form1.cs                     # Core application logic and event handlers
-│   ├── Form1.Designer.cs            # Form designer bindings
-│   ├── Form1.resx                   # Form resource dictionary
+│   ├── PrimeGamesSingaporeForm.cs   # Core application logic and event handlers
+│   ├── PrimeGamesSingaporeForm.Designer.cs # Form designer bindings
+│   ├── PrimeGamesSingaporeForm.resx # Form resource dictionary
 │   ├── Program.cs                   # Main program thread entry point
-│   └── Individual Project Dylan Lim.csproj
-├── Individual Project Dylan Lim.sln # Solution file (placed at repository root for VS launch)
+│   └── PrimeGamesOrderApp.csproj
+├── PrimeGamesOrderApp.sln           # Solution file (placed at repository root for VS launch)
 ├── .gitignore                       # Git ignore mappings for Visual Studio build outputs
 └── README.md                        # Project documentation file
 ```
@@ -91,7 +91,7 @@ Following standard industry conventions, the project directory layout is structu
 During preparation for publication to GitHub, the project underwent essential polishing to improve build reliability and code hygiene:
 
 1.  **Removed Legacy Dependencies:** The project previously referenced the deprecated `Microsoft.VisualBasic.PowerPacks` library to draw a simple divider line on the form. This has been refactored and replaced with a standard, native `System.Windows.Forms.Panel` control. This eliminates compilation errors on modern environments that lack the Visual Basic PowerPacks SDK.
-2.  **Implemented State Logic:** Fully implemented the form's interactive code logic inside `Form1.cs`. Previously empty event handlers are now fully operational, supporting live calculations, item selections, promo checks, and quantity validation.
+2.  **Implemented State Logic:** Fully implemented the form's interactive code logic inside `PrimeGamesSingaporeForm.cs`. Previously empty event handlers are now fully operational, supporting live calculations, item selections, promo checks, and quantity validation.
 3.  **Added Environment Isolation (.gitignore):** A `.gitignore` file has been added to exclude temporary `.vs/` directories, intermediate binary folders (`bin/`, `obj/`), and user settings, ensuring a clean and production-ready source control upload.
 4.  **Standardized Directory Layout:** Repositioned the `.sln` file at the repository root folder, C# code files into a dedicated `src/` folder, and documentation, flowcharts, drawio sources, and wireframes into a `docs/` folder.
 
@@ -109,7 +109,7 @@ During preparation for publication to GitHub, the project underwent essential po
     git clone <your-github-repo-url>
     ```
 2.  Open Visual Studio and select **Open a project or solution**.
-3.  Navigate to the cloned directory and select the solution file at the root: `Individual Project Dylan Lim.sln`.
+3.  Navigate to the cloned directory and select the solution file at the root: `PrimeGamesOrderApp.sln`.
 4.  Press `F5` or click the **Start** button in Visual Studio to compile and run the application.
 
 ---

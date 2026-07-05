@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2926D6BE-563E-4135-842A-ACB7E2DE14A5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Individual_Project_Dylan_Lim</RootNamespace>
-    <AssemblyName>Individual Project Dylan Lim</AssemblyName>
+    <RootNamespace>PrimeGamesOrderApp</RootNamespace>
+    <AssemblyName>PrimeGamesOrderApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,16 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="PrimeGamesSingaporeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="PrimeGamesSingaporeForm.Designer.cs">
+      <DependentUpon>PrimeGamesSingaporeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="PrimeGamesSingaporeForm.resx">
+      <DependentUpon>PrimeGamesSingaporeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

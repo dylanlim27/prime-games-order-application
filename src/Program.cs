@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Individual_Project_Dylan_Lim
+namespace PrimeGamesOrderApp
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Individual_Project_Dylan_Lim
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new primegamessingaporeForm());
+            Application.Run(new PrimeGamesSingaporeForm());
         }
     }
 }

@@ -8,21 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Individual_Project_Dylan_Lim
+namespace PrimeGamesOrderApp
 {
-    public partial class primegamessingaporeForm : Form
+    public partial class PrimeGamesSingaporeForm : Form
     {
         // Bundle selection state
         private bool hasTeamspeakBundle = false;
         private bool hasValueBundle = false;
         private bool hasFamilyBundle = false;
 
-        public primegamessingaporeForm()
+        public PrimeGamesSingaporeForm()
         {
             InitializeComponent();
         }
 
-        private void primegamessingaporeForm_Load(object sender, EventArgs e)
+        private void PrimeGamesSingaporeForm_Load(object sender, EventArgs e)
         {
             // Wire up console radio buttons
             playstation5RadioButton.CheckedChanged += ConsoleRadioButton_CheckedChanged;

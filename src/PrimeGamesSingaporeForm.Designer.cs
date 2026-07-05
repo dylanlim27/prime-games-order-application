@@ -1,7 +1,7 @@
 ﻿
-namespace Individual_Project_Dylan_Lim
+namespace PrimeGamesOrderApp
 {
-    partial class primegamessingaporeForm
+    partial class PrimeGamesSingaporeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -452,7 +452,7 @@ namespace Individual_Project_Dylan_Lim
             // nintendoswitch3rdgenerationPictureBox
             // 
             this.nintendoswitch3rdgenerationPictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.nintendoswitch3rdgenerationPictureBox.Image = global::Individual_Project_Dylan_Lim.Properties.Resources.nintendo_switch;
+            this.nintendoswitch3rdgenerationPictureBox.Image = global::PrimeGamesOrderApp.Properties.Resources.nintendo_switch;
             this.nintendoswitch3rdgenerationPictureBox.Location = new System.Drawing.Point(790, 149);
             this.nintendoswitch3rdgenerationPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.nintendoswitch3rdgenerationPictureBox.Name = "nintendoswitch3rdgenerationPictureBox";
@@ -465,7 +465,7 @@ namespace Individual_Project_Dylan_Lim
             // xboxseriesxPictureBox
             // 
             this.xboxseriesxPictureBox.BackColor = System.Drawing.Color.Transparent;
-            this.xboxseriesxPictureBox.Image = global::Individual_Project_Dylan_Lim.Properties.Resources.xbox_series_x;
+            this.xboxseriesxPictureBox.Image = global::PrimeGamesOrderApp.Properties.Resources.xbox_series_x;
             this.xboxseriesxPictureBox.Location = new System.Drawing.Point(398, 149);
             this.xboxseriesxPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.xboxseriesxPictureBox.Name = "xboxseriesxPictureBox";
@@ -477,7 +477,7 @@ namespace Individual_Project_Dylan_Lim
             // 
             // playstation5PictureBox
             // 
-            this.playstation5PictureBox.Image = global::Individual_Project_Dylan_Lim.Properties.Resources.ps5;
+            this.playstation5PictureBox.Image = global::PrimeGamesOrderApp.Properties.Resources.ps5;
             this.playstation5PictureBox.Location = new System.Drawing.Point(40, 149);
             this.playstation5PictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.playstation5PictureBox.Name = "playstation5PictureBox";
@@ -631,7 +631,7 @@ namespace Individual_Project_Dylan_Lim
             this.warrantypackagedetailsTextBox.Size = new System.Drawing.Size(368, 134);
             this.warrantypackagedetailsTextBox.TabIndex = 1;
             // 
-            // primegamessingaporeForm
+            // PrimeGamesSingaporeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -671,9 +671,9 @@ namespace Individual_Project_Dylan_Lim
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "primegamessingaporeForm";
+            this.Name = "PrimeGamesSingaporeForm";
             this.TransparencyKey = System.Drawing.Color.Transparent;
-            this.Load += new System.EventHandler(this.primegamessingaporeForm_Load);
+            this.Load += new System.EventHandler(this.PrimeGamesSingaporeForm_Load);
             this.productsgroupBox.ResumeLayout(false);
             this.productsgroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.promotioncodePictureBox)).EndInit();
