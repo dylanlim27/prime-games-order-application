@@ -7,7 +7,7 @@ A comprehensive **Windows Forms (WinForms)** application developed in C# and .NE
 ## 📸 Application Preview
 Here is a preview of the main application window:
 
-<img src="docs/assets/Application%20Screenshot%20Master.jpg" alt="Application Interface" width="60%">
+<img src="docs/assets/Application%20Screenshot%20Master.jpg" alt="Application Interface" width="80%">
 
 ---
 
